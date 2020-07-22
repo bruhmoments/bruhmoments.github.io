@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kangen Laksa</title>
+	<link rel="stylesheet" type="text/css" href="assets/nav.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/footer.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="assets/ls/js/lightslider.js"></script> 
+	<link rel="stylesheet"  href="assets/ls/css/lightslider.css"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="nav">
+		<img src="assets/logo.png">
+		<label for="hambur" id="ck">&#9776;</label>
+		<input type="checkbox" id="hambur" onclick="check()">
+		<div class="nav-menu">
+			<a href="index.html">
+				<div>Home</div>
+			</a>
+			<a href="menu.html">
+				<div>Menu</div>
+			</a>
+			<a href="contact.html">
+				<div>Contact Us</div>
+			</a>
+			<a href="#" class="cur">
+				<div>Location</div>
+			</a>
+ 		</div>
+
+	<div id="overlay"></div>
+	</div>
+	<div class="ctn-index" style="width: 100%; margin-top: 70px;box-sizing: border-box; padding: 30px;">
+		<div class="ctn-tron" style="width: 100%; border-radius: 7px; background-color: white; box-sizing: border-box; overflow-y: hidden;">
+			<div class="tron-two">
+				<div style="width: 100%; box-sizing: border-box; float: left;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.1490690682181!2d106.83204482911454!3d-6.445850999708534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjYnNDUuMSJTIDEwNsKwNDknNTcuMyJF!5e0!3m2!1sid!2sid!4v1588779399495!5m2!1sid!2sid" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div><br />
+			</div>
+			<div class="tron-two" style="right: 0;">
+				<h1 style="font-family: 'Jost', sans-serif; border-bottom: 3px solid #f38423; border-bottom-width:thin;">Alamat</h1>
+				<h4 style="text-align: justify;">Grand Depok City Sektor Melati Blok C2 No. 52, Jatimulya, Cilodong, Jawa Barat 16413</h4>
+			</div>
+		</div>
+   	</div>
+   	<div class="ctn-index" style="width: 100%; box-sizing: border-box; padding: 0 30px 30px 30px;">
+		<div class="ctn-tron2" style="width: 100%; border-radius: 7px; background-color: white; box-sizing: border-box; overflow-y: hidden;">
+			<div class="tron-two" style="right: 0;">
+				<img src="assets/t4lk.png" width="100%">
+			</div>
+			<div class="tron-two">
+				<h1 style="font-family: 'Jost', sans-serif; border-bottom: 3px solid #f38423; border-bottom-width:thin;">Tempatnya Laksa</h1>
+				<p style="text-align: justify;">Kangen Laksa menawarkan berbagai macam variasi dari Laksa, selain itu, berbagai macam Mie dan Nasi Goreng juga tersedia di Kangen Laksa.</p>
+				<p style="text-align: justify;">Kangen Laksa dapat dipesan di GoFood</p>
+				<div style="display: inline-block; width: 100%;">
+					<h2 style="font-family: 'Jost', sans-serif;">Pesan Sekarang</h2>
+					<a href="https://bit.ly/2YIbGxd" target="_blank">
+						<button class="baten baten-gofood">
+							<img src="assets/goput.png" width="30%">
+							gofood
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+   	</div>
+
+	</div>
+</body>
+<footer>
+<div class="ft-wrapper">
+	<h4>&copy Kangen Laksa 2020</h4>
+	<br>
+	<h5>Kagen Laksa - Grand Depok City Sektor Melati Blok C2 No. 52</h5>
+</div>
+<div class="ft-wrapper2">
+	<a href="">Instagram</a> | 
+	<a href="">Whatsapp</a>
+</div>
+</footer>
+<script type="text/javascript">
+	function check() {
+		if (document.getElementById("hambur").checked) {
+			document.getElementById("ck").innerHTML = 'X';
+		} else {
+			document.getElementById("ck").innerHTML = '&#9776';
+		}
+	};
+	function closeMn() {
+		// Uncheck
+		document.getElementById("hambur").checked = false;
+		check();
+	};
+	document.getElementById("overlay").addEventListener("click", closeMn);
+
+	function viewMenu(x){
+		const element = document.getElementById(x);
+		const offset = 45;
+		const bodyRect = document.body.getBoundingClientRect().top;
+		const elementRect = element.getBoundingClientRect().top;
+		const elementPosition = elementRect - bodyRect;
+		const offsetPosition = elementPosition - offset;
+
+		window.scrollTo({
+		  top: offsetPosition,
+		  behavior: 'smooth'
+		});
+	}
+</script>
+<script type="text/javascript">
+		/*
+		$(document).ready(function() {
+            $('#image-gallery').lightSlider({
+                item:1,
+                slideMargin: 0,
+                pager: false,
+                speed:500,
+                pause:5000,
+                enableDrag:false,
+                loop:true,
+                auto:true,
+                useCSS:true,
+                onSliderLoad: function() {
+                    $('#image-gallery').removeClass('cS-hidden');
+                }  
+            });
+		});
+</script>
+</html>

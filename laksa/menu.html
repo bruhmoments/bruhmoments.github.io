@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kangen Laksa</title>
+	<link rel="stylesheet" type="text/css" href="assets/nav.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/footer.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="nav">
+		<img src="assets/logo.png">
+		<label for="hambur" id="ck">&#9776;</label>
+		<input type="checkbox" id="hambur" onclick="check()">
+		<div class="nav-menu">
+			<a href="index.html">
+				<div>Home</div>
+			</a>
+			<a href="#" class="cur">
+				<div>Menu</div>
+			</a>
+			<a href="contact.html">
+				<div>Contact Us</div>
+			</a>
+			<a href="location.html">
+				<div>Location</div>
+			</a>
+ 		</div>
+
+	<div id="overlay"></div>
+	</div>
+	<div class="list-mn">
+		<!--Second Sticky Nav-->
+		<div class="nav2">
+			<div class="dummy">
+				<h1 style="text-align: center; font-family: 'Jost', sans-serif;color: #f38423;">DAFTAR MENU</h1>
+			</div>
+			<div class="sticky2">
+				<a onclick="viewMenu('laksa')">
+					<div>Laksa</div>
+				</a>
+				<a onclick="viewMenu('nasgor')">
+					<div>Nasi Goreng</div>
+				</a>
+				<a onclick="viewMenu('mie')">
+					<div>Mie</div>
+				</a>
+				<a href="https://bit.ly/2YIbGxd" target="_blank" style="right: 70px; position: absolute;" class="goputt">
+					<button class="baten baten-gofood">
+						<img src="assets/goput.png" width="30%">
+						gofood
+					</button>
+				</a>
+ 			</div>
+		</div>
+		<h2 style="text-align: left; font-family: 'Jost', sans-serif; margin-left: 5%;   position: relative;" id="laksa">
+				Variasi Laksa :
+			</h2>
+		<div class="mn-laksa">
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png" alt="Laksa Singapore">
+				Laksa Singapore
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 0
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 3
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 2
+			</div>
+		</div>
+		<hr width="95%">
+		<h2 style="text-align: left; font-family: 'Jost', sans-serif; margin-left: 5%;   position: relative;" id="nasgor">
+				Variasi Nasi Goreng :
+			</h2>
+		<div class="mn-laksa">
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa Singapore
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 0
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 3
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 2
+			</div>
+		</div>
+		<hr width="95%">
+		<h2 style="text-align: left; font-family: 'Jost', sans-serif; margin-left: 5%;   position: relative;" id="mie">
+				Variasi Mie:
+			</h2>
+		<div class="mn-laksa">
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa Singapore
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 0
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 3
+			</div>
+			<div class="food food-laksa">
+				<img src="assets/laksa1.png">
+				Laksa 2
+			</div>
+		</div>
+		<hr width="95%">
+	</div>	
+	<div class="inner-sticky" style="position: sticky; bottom: 10%; margin:0 14px 14px 0;">
+		<a href="https://bit.ly/2YIbGxd" target="_blank" style="float: right;">
+			<button class="baten baten-gofood">
+				<img src="assets/goput.png" width="30%">
+				gofood
+			</button>
+		</a>
+	</div>
+</body>
+<footer>
+<div class="ft-wrapper">
+	<h4>© Kangen Laksa 2020</h4>
+</div>
+<div class="ft-wrapper2">
+	<a href="">Instagram</a> | 
+	<a href="">Whatsapp</a>
+</div>
+</footer>
+<script type="text/javascript">
+	function check() {
+		if (document.getElementById("hambur").checked) {
+			document.getElementById("ck").innerHTML = 'X';
+		} else {
+			document.getElementById("ck").innerHTML = '&#9776';
+		}
+	};
+	function closeMn() {
+		// Uncheck
+		document.getElementById("hambur").checked = false;
+		check();
+	};
+	document.getElementById("overlay").addEventListener("click", closeMn);
+
+	function viewMenu(x){
+		const element = document.getElementById(x);
+		const offset = 45;
+		const bodyRect = document.body.getBoundingClientRect().top;
+		const elementRect = element.getBoundingClientRect().top;
+		const elementPosition = elementRect - bodyRect;
+		const offsetPosition = elementPosition - offset;
+
+		window.scrollTo({
+		  top: offsetPosition,
+		  behavior: 'smooth'
+		});
+	}
+</script>
+</html>
