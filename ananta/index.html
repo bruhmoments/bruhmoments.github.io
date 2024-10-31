@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>Ananta Pribadi | Developer</title>
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+    <!-- Remove Google Analytics once you have your portfolio website set-up -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-122228201-4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
+
+      gtag("config", "UA-122228201-4")
+    </script>
+    <!-- End of Google Analytics -->
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Ananta</span>
+          <br />
+          I'm a software developer/problem solver.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#contact">Get in touch</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/Profile.jpg"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              A software developer with over 3 years of experience in fullstack, backend and game development.
+              My experience spans across multiple industries, allowing me to adapt quickly and deliver solutions that align with company goals.
+            </p>
+            <p class="about-wrapper__info-text">
+              Driven by curiosity and a passion for technology, I thrive on transforming ideas into impactful, quality solutions that resonate with users and clients alike.
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="https://drive.google.com/drive/folders/1ldGxTTgm41xO3lVagtXbGdzNZ9fVoz0j?usp=drive_link" class="cta-btn cta-btn--resume">View Resume</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Laundry Management System</h3>
+              <p class="project-wrapper__text-info">
+                Tailored for KlinMax's kilo laundry service, used to manage their business operations. It includes features such as customer management, order tracking, and data reporting that helps laundry to make informed decisions and improve it's business performance.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/bruhmoments/laundering" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/Laundry.jpg"
+                  class="img-fluid"
+                  alt="Project Image"
+                  width="1366"
+                  height="767"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Skrinning Pre Eklampsia</h3>
+              <p class="project-wrapper__text-info">
+                This app is designed for healthcare facilities to support early detection and management of preeclampsia risk among pregnant women. It allows medical personnel to input patient data, assess risk factors, and generate screening results, aiding in timely intervention and treatment plans.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <!-- <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+                <a href="#" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                > -->
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/Skrining.jpg"
+                  class="img-fluid"
+                  alt="Project Image"
+                  width="1366"
+                  height="767"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Vetavora</h3>
+              <p class="project-wrapper__text-info">
+                Created a landing page and CMS for digital education platform for veterinary professionals and animal practicioners that offers webinars and other learning products.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://www.vetavora.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Live</a
+                >
+              </div>
+            </div>
+            <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <div class="project-wrapper__image">
+              <a href="https://www.vetavora.com/" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Vet.png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Simple Fishing Game</h3>
+              <p class="project-wrapper__text-info">
+                A fishing game played on terminal. Read today's forecasts, buy stick & baits, drop your worries for uncertainty and start fishing! Created with the purpose of learning Go.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a href="https://github.com/bruhmoments/mancingmania" target="_blank" class="cta-btn text-color-main"
+                  >Source Code</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/Fishing.png"
+                  class="img-fluid"
+                  alt="Project Image"
+                  width="1366"
+                  height="767"
+                />
+              </div>
+            </div>
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">If you want to</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">I'm always open for new opportunities, feel free to reach me out on:</p>
+          <a href="http://linkedin.com/in/ananta-pribadi-209a5b1b7/" class="cta-btn cta-btn--resume">LinkedIn</a>
+          &nbsp;
+          <a href="mailto:ananta3ptp@gmail.com" class="cta-btn cta-btn--resume">Email</a>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="twitter"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </a> -->
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a> -->
+          <!-- <a
+            href="#!"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="codepen"
+          >
+            <i class="fa-brands fa-codepen"></i>
+          </a> -->
+          <a
+            href="http://linkedin.com/in/ananta-pribadi-209a5b1b7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="http://github.com/bruhmoments/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Shout out to Anil. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
